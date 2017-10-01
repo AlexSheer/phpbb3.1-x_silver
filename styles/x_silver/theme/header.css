@@ -1,0 +1,31 @@
+/* You have the right to customize this skin as you want as the credits remain in place.
+
+DO NOT REMOVE CREDITS!!!!!!!!!
+
+http://www.phpbb-skin.info/skinlab
+Alpha Trion
+
+*/
+
+
+#top_logo {
+margin : 0 0 0 0;
+padding : 0 0 0 0;
+background : url('./images/top_header.png') repeat-x top right;
+height : 100px;
+border: 1px solid #4d6c95;
+
+/*border-left : 1px solid #404040;
+border-right : 1px solid #404040;*/
+white-space : nowrap;
+overflow : hidden;
+}
+
+#logodesc {
+margin-bottom : 5px;
+padding : 5px 25px;
+background : #d9dfe4;
+border-bottom : 1px solid #4787a7;
+}
+
+
