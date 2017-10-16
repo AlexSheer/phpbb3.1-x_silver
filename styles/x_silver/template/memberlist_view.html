@@ -1,6 +1,6 @@
 <!-- INCLUDE overall_header.html -->
 
-<div class="c-h-l"><div class="c-h-r"><div class="c-h-c"><div class="c-h-title"><h4>{PAGE_TITLE}</h4></div></div></div></div>
+<div class="c-h-l"><div class="c-h-r"><div class="c-h-c"><div class="c-h-title"><h4><div style="display: inline-block; margin-left: -4px; position: inherit; padding: 2px;" class="<!-- IF S_ONLINE --> online<!-- ELSE -->offline<!-- ENDIF --> viewprofile">&nbsp;</div>{PAGE_TITLE}</h4></div></div></div></div>
 
 <!-- EVENT memberlist_view_content_prepend -->
 
@@ -12,7 +12,6 @@
 		<dl class="left-box">
 			<dt class="profile-avatar">
 				{AVATAR_IMG}
-				<div class="<!-- IF S_ONLINE --> online<!-- ELSE -->offline<!-- ENDIF --> viewprofile">&nbsp;</div>
 			</dt>
 			<!-- EVENT memberlist_view_rank_avatar_before -->
 			<!-- IF RANK_TITLE --><dd style="text-align: center;">{RANK_TITLE}</dd><!-- ENDIF -->
