@@ -10,6 +10,8 @@
 	<!-- DEFINE $SHOW_PANEL = 'display-panel' -->
 <!-- ENDIF -->
 
+<!-- EVENT mcp_topic_minitabs_before -->
+
 <div id="minitabs" class="sub-panels" data-show-panel="{$SHOW_PANEL}" role="tablist">
 	<ul>
 		<li id="display-panel-tab" class="tab<!-- IF not S_MERGE_VIEW --> activetab<!-- ENDIF -->">
@@ -21,6 +23,7 @@
 		<li id="merge-panel-tab" class="tab<!-- IF S_MERGE_VIEW --> activetab<!-- ENDIF -->">
 			<a href="#minitabs" data-subpanel="merge-panel" role="tab" aria-controls="merge-panel">{L_MERGE_POSTS}</a>
 		</li>
+		<!-- EVENT mcp_topic_minitabs_after -->
 	</ul>
 </div>
 </div>
@@ -79,7 +82,7 @@
 	</dl>
 	</fieldset>
 <!-- ENDIF -->
-
+ 	<!-- EVENT mcp_topic_panel_after -->
 	</div>
 </div>
 
@@ -110,8 +113,13 @@
 					</li>
 				</ul>
 
+				<!-- EVENT mcp_topic_postrow_post_subject_before -->
 				<h3><a href="{postrow.U_POST_DETAILS}">{postrow.POST_SUBJECT}</a></h3>
+				<!-- EVENT mcp_topic_postrow_post_subject_after -->
+
+				<!-- EVENT mcp_topic_postrow_post_details_before -->
 				<p class="author"><a href="#pr{postrow.POST_ID}">{postrow.MINI_POST_IMG}</a> {L_POSTED} {postrow.POST_DATE} {L_POST_BY_AUTHOR} <strong>{postrow.POST_AUTHOR_FULL}</strong><!-- IF postrow.U_MCP_DETAILS --> [ <a href="{postrow.U_MCP_DETAILS}">{L_POST_DETAILS}</a> ]<!-- ENDIF --></p>
+				<!-- EVENT mcp_topic_postrow_post_details_after -->
 
 				<!-- IF postrow.S_POST_UNAPPROVED -->
 				<p class="post-notice unapproved">
@@ -173,6 +181,7 @@
 		<!-- IF S_CAN_MERGE --><option value="merge_posts"<!-- IF S_MERGE_VIEW --> selected="selected"<!-- ENDIF -->>{L_MERGE_POSTS}</option><!-- ENDIF -->
 		<!-- IF S_CAN_SPLIT --><option value="split_all"<!-- IF S_SPLIT_VIEW --> selected="selected"<!-- ENDIF -->>{L_SPLIT_POSTS}</option><option value="split_beyond">{L_SPLIT_AFTER}</option><!-- ENDIF -->
 		<!-- IF S_CAN_SYNC --><option value="resync">{L_RESYNC}</option><!-- ENDIF -->
+		<!-- EVENT mcp_topic_action_after -->
 	</select>&nbsp;
 	<input class="button1" type="submit" name="mcp_topic_submit" value="{L_SUBMIT}" />
 	<div><a href="#" onclick="marklist('mcp', 'post', true); return false;">{L_MARK_ALL}</a> :: <a href="#" onclick="marklist('mcp', 'post', false); return false;">{L_UNMARK_ALL}</a></div>
