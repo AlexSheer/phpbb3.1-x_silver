@@ -132,6 +132,7 @@ font-weight : bold;
 text-align : left;
 white-space : nowrap;
 padding-top : 4px;
+	padding-right: 8px;
 }
 
 /* Table styles
@@ -1001,7 +1002,7 @@ a.button2, input.button2, input.button3 {
 
 /* <a> button in the style of the form buttons */
 a.button1, a.button2 {
-	color: #000000;
+/*	color: #000000; */
 }
 
 /* Hover states */
@@ -1065,7 +1066,7 @@ input.disabled {
 	background: -moz-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F1F8FF), color-stop(100%, #CADCEB));
 	background: -webkit-linear-gradient(top, #F1F8FF 0%, #CADCEB 100%);
-	background: linear-gradient(to bottom, #F1F8FF 0%, #CADCEB 100%);
+	background: linear-gradient(to bottom, #D0E7FE 0%, #27689E 100%);
 }
 
 .dropdown .pointer {
@@ -1077,7 +1078,7 @@ input.disabled {
 }
 
 .dropdown-extended .pointer-inner {
-	border-color: #F1F8FF transparent;
+	border-color: #C1DEFB transparent;
 }
 
 ul.linklist li.responsive-menu a.responsive-menu-link:before {
@@ -1090,7 +1091,7 @@ ul.linklist li.responsive-menu a.responsive-menu-link:hover:before, ul.linklist 
 
 .dropdown .dropdown-contents {
 	background: #fff;
-	border-color: #b9b9b9;
+	border-color: #4d6c95;
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
