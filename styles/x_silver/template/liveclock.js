@@ -113,6 +113,10 @@
 			else if (mday == 23) { mn = "rd"; }
 			else if (mday == 31) { mn = "st"; }
 		}
+		else
+		{
+			mn = "";
+		}
 
 	// Set up the hours for either 24 or 12 hour display:
 		if (my12_hour) {
