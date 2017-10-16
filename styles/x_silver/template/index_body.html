@@ -34,8 +34,8 @@
 <!-- ENDIF -->
 
 <!-- EVENT index_body_stat_blocks_before -->
-	<br clear="all" />
-<div><div class="c-h-l"><div class="c-h-r"><div class="c-h-c"><div class="c-h-title"><h4>{L_FORUM} {L_STATISTICS}</h4></div></div></div></div></div>
+	<br class="statistics_ext" clear="all" />
+<div class="statistics_ext"><div class="c-h-l"><div class="c-h-r"><div class="c-h-c"><div class="c-h-title"><h4>{L_FORUM} {L_STATISTICS}</h4></div></div></div></div></div>
 <div style="border-left: 1px solid #4D6C95;border-right: 1px solid #4D6C95; border-bottom: 1px solid #4D6C95">
 <!-- IF S_DISPLAY_ONLINE_LIST -->
 	<div class="stat-block online-list">
@@ -63,7 +63,7 @@
 <!-- ENDIF -->
 
 <!-- IF NEWEST_USER -->
-	<h6>{L_STATISTICS}</h6>
+	<h6 class="statistics_ext">{L_STATISTICS}</h6>
 	<div class="stat-block statistics">
 		<p>
 			<!-- EVENT index_body_block_stats_prepend -->
