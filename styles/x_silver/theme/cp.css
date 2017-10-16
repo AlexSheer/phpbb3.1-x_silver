@@ -451,4 +451,42 @@ dl.mini dd {
 	{
 		display: none
 	}
+	.cp_left{
+		border-top: 1px dotted transparent;
+		float: none !important;
+		line-height: normal !important;
+		font-size: 1em !important;
+		list-style: none;
+		margin: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		white-space: nowrap;
+		text-align: left;
+		background: none;
+		border:none;
+}
+	a.cp_left:link , a.cp_left:visited {
+		color : #105289;
+		font-weight: normal;
+	}
+	a.cp_left:hover, a.cp_left:active {
+		color : #D31141;
+		font-weight: normal;
+		text-decoration: underline;
+	}
+	.cp_left:hover{
+		border-top: 1px dotted transparent;
+		float: none !important;
+		line-height: normal !important;
+		font-size: 1em !important;
+		list-style: none;
+		margin: 0;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		white-space: nowrap;
+		text-align: left;
+		background: none;
+		border: none;
+		font-weight: normal;
+	}
 }
