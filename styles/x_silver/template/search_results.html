@@ -5,7 +5,7 @@
 
 	<!-- IF TOTAL_MATCHES > 0 -->
 		<div class="search-box" role="search">
-			<form method="post" action="{S_SEARCH_ACTION}">
+			<form method="post" action="{S_SEARCH_ACTION}" style="border-bottom: 1px solid #4D6C95;">
 			<fieldset>
 				<input class="inputbox search tiny" type="search" name="add_keywords" id="add_keywords" value="" placeholder="{L_SEARCH_IN_RESULTS}" />
 				<button class="button icon-button search-icon" type="submit" title="{L_SEARCH}">{L_SEARCH}</button>
@@ -173,7 +173,7 @@
 <!-- ENDIF -->
 
 <!-- IF .pagination or .searchresults or S_SELECT_SORT_KEY or S_SELECT_SORT_DAYS -->
-	<form method="post" action="{S_SEARCH_ACTION}">
+	<form method="post" action="{S_SEARCH_ACTION}" style="border-bottom: 1px solid #4D6C95;">
 
 	<fieldset class="display-options">
 		<!-- IF S_SELECT_SORT_DAYS or S_SELECT_SORT_KEY -->
